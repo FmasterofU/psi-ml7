@@ -3,7 +3,8 @@ from nltk.stem import SnowballStemmer
 from nltk.tokenize import word_tokenize, sent_tokenize
 import os.path
 import math
-
+import sys
+sys.stdout.reconfigure(encoding='utf-8') # needed for Petlja's scoring system
 
 def tf_score(sentences: list):
     terms = dict()
