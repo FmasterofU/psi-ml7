@@ -46,7 +46,6 @@ def find_world_hits(coords, velocities, N, S, T, P):
     old_wall_bangs = np.zeros(coords.shape[0])
     coords = coords - starting_points # now coords holds the remaining path of point
     while np.any(wall_bangs != old_wall_bangs):
-        print(np.sum(wall_bangs), stable_particles)
         coords = np.nan_to_num(coords)
         new_angles = - angles * np.where(np.abs(starting_points[:, 1]) == S, 1, 0).reshape((angles.shape[0],1)) + \
             (np.pi - angles) * np.where(np.abs(starting_points[:, 0]) == S, 1, 0).reshape((angles.shape[0],1)) * (angles >= 0).reshape((angles.shape[0],1)) + \
@@ -79,7 +78,7 @@ def find_world_hits(coords, velocities, N, S, T, P):
         y_minus_S = y_minus_S * np.repeat(np.logical_and(y_minus_S[:, 0] <= S, y_minus_S[:, 0] >= -S).reshape((y_minus_S.shape[0],1)), 2, axis=1) * np.repeat((np.linalg.norm(y_minus_S - starting_points, ord=2, axis=1) <= np.linalg.norm(coords, ord=2, axis=1)).reshape((angles.shape[0],1)), 2, axis=1)
         new_starting_points = np.nan_to_num(x_minus_S) + np.nan_to_num(x_plus_S) + np.nan_to_num(y_minus_S) + np.nan_to_num(y_plus_S)
         old_wall_bangs = wall_bangs.copy()
-        wall_bangs = wall_bangs + np.any(np.abs(coords + starting_points) > S, axis=1)
+        wall_bangs = wall_bangs + np.any(np.abs(coords + starting_points) > S, axis=1) # + np.any(np.abs(coords + starting_points) == S, axis=1) * np.all(np.abs(coords + starting_points) <= S, axis=1)
         coords = coords - (np.nan_to_num(new_starting_points) - np.nan_to_num(starting_points)) * np.logical_not(np.repeat(np.all(new_starting_points == 0, axis=1).reshape((new_starting_points.shape[0],1)), 2, axis=1))
         coords = coords * np.repeat(np.any(np.abs(coords + starting_points) > S, axis=1).reshape((coords.shape[0], 1)), 2, axis=1)
         starting_points = new_starting_points
