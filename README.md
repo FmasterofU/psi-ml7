@@ -24,6 +24,7 @@ from ```3/13/2021@00:00:01``` to ```3/16/2021@23:59:59```
 ### Asked Questions and given information
 
 - [Q&A](PetljaAnnouncementsQ&A.pdf)
+- grading platform supports only Python 3.6
 
 ## Achieved results
 
