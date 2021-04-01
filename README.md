@@ -3,9 +3,9 @@
 ## Tasks
 
 - [Getting Started](psiml%20data/statements/gettingstarted.md)
-- [TF-IDF](psiml%20data/statements/tfidf.md) - [dataset](psiml%20data/tfidf)
-- [Big-Bang](psiml%20data/statements/bigbang.md) - [dataset](psiml%20data/big_bang)
-- [Checkmate](psiml%20data/statements/checkmate.md) - [dataset](psiml%20data/checkmate)
+- [TF-IDF](psiml%20data/statements/tfidf.md) - [dataset](psiml%20data/full%20datasets/tfidf)
+- [Big-Bang](psiml%20data/statements/bigbang.md) - [dataset](psiml%20data/full%20datasets/big_bang)
+- [Checkmate](psiml%20data/statements/checkmate.md) - [dataset](psiml%20data/full%20datasets/checkmate)
 
 ## Available time
 
