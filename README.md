@@ -11,14 +11,19 @@
 
 from 00:00:01 13.03.2021. to 23:59:59 16.03.2021.
 
-## The following libraries are allowed for solving every task:
+## Aditional constraints
 
-- standard python library
-- pillow
-- imageio
-- numpy
-- nltk
+### The following libraries are allowed for solving every task:
 
+- `standard python library`
+- `pillow`
+- `imageio`
+- `numpy`
+- `nltk`
+
+### Asked Questions and given information
+
+- [Q&A](PetljaAnnouncementsQ&A.pdf)
 
 ## Achieved results
 
