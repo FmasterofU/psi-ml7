@@ -1,8 +1,15 @@
+# PSI:ML 7 (2021) Homework tasks
+
 ## Tasks
 
-- [TF-IDF](psiml data/statements/tfidf/md)
-- [Big-Bang]()
-- [Checkmate]
+- [Getting Started](psiml%20data/statements/gettingstarted.md)
+- [TF-IDF](psiml%20data/statements/tfidf.md) - [dataset](psiml%20data/tfidf)
+- [Big-Bang](psiml%20data/statements/bigbang.md) - [dataset](psiml%20data/big_bang)
+- [Checkmate](psiml%20data/statements/checkmate.md) - [dataset](psiml%20data/checkmate)
+
+## Available time
+
+from 00:00:01 13.03.2021. to 23:59:59 16.03.2021.
 
 ## The following libraries are allowed for solving every task:
 
