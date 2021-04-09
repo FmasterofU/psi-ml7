@@ -45,3 +45,7 @@ from ```3/13/2021@00:00:01``` to ```3/16/2021@23:59:59```
 | max             | 1               | 1000     | 1000  | 676       |
 
 **public** set percentage:  **78.89%** 
+
+## Update April 2021
+
+I didn't get the invite. Oh well.
